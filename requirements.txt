@@ -1,0 +1,12 @@
+customtkinter>=5.2.2
+
+# yt-dlp, ffmpeg, ffprobe, ffplay, aria2c, and node are bundled binaries
+# placed in bin/ — they are NOT Python packages and are not installed here.
+#
+# For development convenience you may optionally install the yt-dlp
+# Python package, but the application is designed to call the bundled
+# executable directly:
+# yt-dlp>=2024.1.1
+
+# For building the portable executable:
+pyinstaller>=6.3.0

@@ -1,0 +1,56 @@
+Step 2 — Delete local Git history
+
+Inside the project folder:
+
+Universal Batch Video Downloader/
+
+delete
+
+.git
+
+You can do this in Explorer or:
+
+rmdir /s /q .git
+Step 3 — Initialize again
+git init
+Step 4 — Check ignored files
+
+Run
+
+git status
+
+You should NOT see
+
+bin/
+
+If you do, stop here.
+
+Step 5 — First commit
+git add .
+git commit -m "Initial commit (v0.1)"
+Step 6 — Connect GitHub
+git remote add origin https://github.com/jm-lab-eng/Universal-Batch-Video-Downloader.git
+
+Check:
+
+git remote -v
+Step 7 — Rename branch
+git branch -M main
+Step 8 — Push
+git push -u origin main
+
+It should upload successfully.
+
+Verify
+
+Run
+
+git status
+
+Expected:
+
+On branch main
+
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
